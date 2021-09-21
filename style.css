@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+:root {
+  --color-primary: #e2c5c4;
+  --color-black: #000;
+  --color-white: #fff;
+  --color-darkblue: #2d3946;
+  --color-lightbrown: #2d3946;
+  --color-lightblue: #9a96b2;
+  --color-brown: #ac5a31; }
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(1, 2, 8, 0.3), rgba(0, 0, 0, 0.5)), url("../sass/photo-1631029266314-18309c825e83.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 2rem; }
+
+.header {
+  display: flex;
+  justify-content: space-between; }
+  .header__text {
+    margin-left: 44%;
+    font-size: 6rem;
+    color: var(--color-darkblue); }
+
+.navbar {
+  margin-right: 10rem; }
+  .navbar__ul {
+    display: flex; }
+    .navbar__ul li {
+      margin-right: 2rem;
+      list-style: none; }
+    .navbar__ul li a {
+      text-decoration: none;
+      font-size: 2.5rem;
+      color: var(--color-darkblue);
+      font-weight: bold;
+      cursor: pointer; }
+
+.form--hidden {
+  display: none; }
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10rem; }
+
+.form {
+  width: 50rem;
+  min-height: 50rem;
+  background-color: var(--color-primary);
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 1rem; }
+  .form__title {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--color-darkblue); }
+  .form__message {
+    text-align: center;
+    margin-bottom: 1rem; }
+    .form__message--error {
+      color: red; }
+    .form__message--success {
+      color: green; }
+  .form__input, .form__btn {
+    width: 100%;
+    margin-top: 3rem;
+    height: 4rem;
+    padding: 1rem; }
+  .form__input {
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    font-family: inherit; }
+    .form__input:focus {
+      border: 1px solid var(--color-darkblue); }
+    .form__input--error {
+      color: red;
+      border: 1px solid red; }
+  .form__btn {
+    background-color: var(--color-darkblue);
+    border: none;
+    border-radius: 3px;
+    color: var(--color-primary);
+    font-size: 2rem;
+    transition: ease-in 0.2s; }
+    .form__btn:active {
+      transform: scale(0.98); }
+  .form__text {
+    text-align: center;
+    margin: 4rem; }
+  .form__link {
+    color: var(--color-darkblue);
+    text-decoration: none;
+    cursor: pointer; }
+    .form__link:hover {
+      border-bottom: 1px solid var(--color-darkblue); }
+
+.form__error--username,
+.form__error--email,
+.form__error--password,
+.form__error--password2,
+.form__error--passwordLogin,
+.form__error--usernameLogin {
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+  color: red; }

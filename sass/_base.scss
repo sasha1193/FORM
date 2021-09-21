@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --color-primary: #e2c5c4;
+  --color-black: #000;
+  --color-white: #fff;
+  --color-darkblue: #2d3946;
+  --color-lightbrown: #2d3946;
+  --color-lightblue: #9a96b2;
+  --color-brown: #ac5a31;
+}

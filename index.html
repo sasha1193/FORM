@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__text">Welcome</h1>
+      <div class="navbar">
+        <ul class="navbar__ul">
+          <li>
+            <a class="linkLoginNav">Login</a>
+          </li>
+          <li>
+            <a class="linkCreateAccountNav">Sign up</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="container">
+      <form class="form" id="login" method="GET">
+        <h1 class="form__title">Login</h1>
+
+        <div class="form__input-group">
+          <input
+            type="text"
+            placeholder="Username"
+            class="form__input"
+            id="usernameLogin"
+          />
+          <div class="form__error--usernameLogin"></div>
+        </div>
+        <div class="form__input-group">
+          <input
+            type="password"
+            placeholder="Password"
+            class="form__input"
+            id="passwordLogin"
+          />
+          <div class="form__error--passwordLogin"></div>
+        </div>
+
+        <button type="submit" value="Submit" class="form__btn">Continue</button>
+        <p class="form__text">
+          <a class="form__link linkCreateAccount"
+            >Don't have account? Sign up</a
+          >
+        </p>
+      </form>
+      <form class="form form--hidden" id="createAccount">
+        <h1 class="form__title">Sign Up</h1>
+
+        <div class="form__input-group">
+          <input
+            type="text"
+            placeholder="Username"
+            class="form__input"
+            id="username"
+          />
+          <div class="form__error--username"></div>
+        </div>
+        <div class="form__input-group">
+          <input
+            type="email"
+            placeholder="Email"
+            class="form__input"
+            id="email"
+          />
+          <div class="form__error--email"></div>
+        </div>
+        <div class="form__input-group">
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            class="form__input"
+            id="password"
+          />
+          <div class="form__error--password"></div>
+        </div>
+        <div class="form__input-group">
+          <input
+            type="password"
+            placeholder="Confirm password"
+            class="form__input"
+            id="password2"
+          />
+          <div class="form__error--password2"></div>
+        </div>
+        <button type="submit" value="Submit" class="form__btn">Continue</button>
+        <p class="form__text">
+          <a class="form__link linkLogin">Already have account? Sign in</a>
+        </p>
+      </form>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

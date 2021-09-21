@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  &__text {
+    margin-left: 44%;
+    font-size: 6rem;
+    color: var(--color-darkblue);
+  }
+}
+
+.navbar {
+  margin-right: 10rem;
+  &__ul {
+    display: flex;
+
+    & li {
+      margin-right: 2rem;
+      list-style: none;
+    }
+    & li a {
+      text-decoration: none;
+      font-size: 2.5rem;
+      color: var(--color-darkblue);
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+}

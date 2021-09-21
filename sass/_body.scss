@@ -1,0 +1,13 @@
+body {
+  height: 100vh;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(1, 2, 8, 0.3),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../sass/photo-1631029266314-18309c825e83.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  font-size: 2rem;
+}
